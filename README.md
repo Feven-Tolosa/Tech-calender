@@ -2,7 +2,7 @@
 
 A modern React.js web application built with Vite that allows users to browse technology events and provides administrators with tools to manage those events.
 
-![Tech Event Calendar Screenshot](./public/images/image.png)
+![Tech Event Calendar Screenshot](./public/images/screenshot.png)
 
 ## 🚀 Live Demo
 

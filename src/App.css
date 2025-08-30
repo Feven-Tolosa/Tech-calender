@@ -70,7 +70,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://cdn.prod.website-files.com/640f59825ad6d8a9545240ba/66914c8580608b324a33cf41_A%20bustling%20technology%20convention%20filled%20with%20people.png');
+    url('./public/images/bg_image.png');
   background-size: cover;
   background-position: center;
   color: white;

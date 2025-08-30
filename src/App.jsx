@@ -18,8 +18,7 @@ function App() {
         {
           id: 1,
           title: 'React Conference 2023',
-          image:
-            'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+          image: '/images.image1.png',
           description:
             'Join us for the biggest React conference of the year featuring expert speakers and workshops.',
           date: '2023-11-15',
@@ -27,8 +26,7 @@ function App() {
         {
           id: 2,
           title: 'JavaScript World Summit',
-          image:
-            'https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+          image: '../images/image2.png',
           description:
             'The annual gathering of JavaScript developers from around the world.',
           date: '2023-12-05',
@@ -36,8 +34,31 @@ function App() {
         {
           id: 3,
           title: 'AI & Machine Learning Workshop',
-          image:
-            'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+          image: 'images/image3.png',
+          description:
+            'Hands-on workshop on the latest AI and machine learning techniques.',
+          date: '2023-11-22',
+        },
+        {
+          id: 4,
+          title: 'Vue Conference 2023',
+          image: '/images.image4.png',
+          description:
+            'Join us for the biggest React conference of the year featuring expert speakers and workshops.',
+          date: '2023-11-15',
+        },
+        {
+          id: 5,
+          title: 'Nextjs World Summit',
+          image: '../images/image5.png',
+          description:
+            'The annual gathering of JavaScript developers from around the world.',
+          date: '2023-12-05',
+        },
+        {
+          id: 6,
+          title: 'Machine Learning Workshop',
+          image: 'images/image6.png',
           description:
             'Hands-on workshop on the latest AI and machine learning techniques.',
           date: '2023-11-22',
