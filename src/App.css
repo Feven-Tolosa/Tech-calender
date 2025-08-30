@@ -70,7 +70,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('./public/images/bg_image.png');
+    url('/images/bg_image.png');
   background-size: cover;
   background-position: center;
   color: white;
