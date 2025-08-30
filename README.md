@@ -6,7 +6,7 @@ A modern React.js web application built with Vite that allows users to browse te
 
 ## 🚀 Live Demo
 
-[Check out the live demo here!](https://your-deployed-app-url.com) <!-- Add your deployment URL -->
+[Check out the live demo here!](https://tech-calender.vercel.app/) <!-- Add your deployment URL -->
 
 ## ✨ Features
 
