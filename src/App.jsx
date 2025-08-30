@@ -18,7 +18,7 @@ function App() {
         {
           id: 1,
           title: 'React Conference 2023',
-          image: '/images.image1.png',
+          image: '/images/image1.png',
           description:
             'Join us for the biggest React conference of the year featuring expert speakers and workshops.',
           date: '2023-11-15',
@@ -42,7 +42,7 @@ function App() {
         {
           id: 4,
           title: 'Vue Conference 2023',
-          image: '/images.image4.png',
+          image: '/images/image4.png',
           description:
             'Join us for the biggest React conference of the year featuring expert speakers and workshops.',
           date: '2023-11-15',
