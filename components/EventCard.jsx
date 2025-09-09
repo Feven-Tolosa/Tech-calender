@@ -1,6 +1,3 @@
-// components/EventCard.js
-import React from 'react'
-
 const EventCard = ({ event }) => {
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' }

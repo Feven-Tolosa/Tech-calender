@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import AdminPage from '../components/AdminPage'
 import HomePage from '../components/HomePage'
+import SignIn from '../components/SignIn'
 
 function App() {
   const [events, setEvents] = useState([])
@@ -100,6 +101,7 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path='/' element={<HomePage events={events} />} />
+          <Route path='/signin' element={<SignIn />} />
           <Route
             path='/admin'
             element={
