@@ -115,10 +115,6 @@ const SignIn = () => {
               )}
             </button>
           </form>
-
-          <div className='signin-footer'>
-            <p>Default credentials: admin / admin123</p>
-          </div>
         </div>
       </div>
 

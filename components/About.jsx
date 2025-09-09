@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import './About.css'
 
 const About = () => {
   return (
@@ -29,9 +28,11 @@ const About = () => {
               </p>
             </div>
             <div className='about-image'>
-              <div className='placeholder-image'>
-                <i className='fas fa-rocket'></i>
-              </div>
+              <img
+                className='about-image'
+                src='/images/bg_image.png'
+                alt='Tech Events'
+              />
             </div>
           </section>
 
@@ -47,9 +48,31 @@ const About = () => {
               </p>
             </div>
             <div className='about-image'>
-              <div className='placeholder-image'>
-                <i className='fas fa-calendar-alt'></i>
-              </div>
+              <img
+                className='about-image'
+                src='/images/image1.png'
+                alt='Tech Events'
+              />
+            </div>
+          </section>
+
+          <section className='about-section'>
+            <div className='about-text'>
+              <h2>Our Vision</h2>
+              <p>
+                We envision a world where technology professionals and
+                enthusiasts can easily find and participate in events that
+                inspire growth, collaboration, and innovation. By fostering a
+                vibrant community of tech enthusiasts, we aim to create a
+                platform that fosters a sense of belonging and connection.
+              </p>
+            </div>
+            <div className='about-image'>
+              <img
+                className='about-image'
+                src='/images/image2.png'
+                alt='Tech Events'
+              />
             </div>
           </section>
 
@@ -103,7 +126,41 @@ const About = () => {
                 <h3>Developer</h3>
                 <p>Frontend Specialist</p>
               </div>
-
+              <div className='team-member'>
+                <div className='member-avatar'>
+                  <i className='fas fa-user'></i>
+                </div>
+                <h3>Developer</h3>
+                <p>Frontend Specialist</p>
+              </div>
+              <div className='team-member'>
+                <div className='member-avatar'>
+                  <i className='fas fa-user'></i>
+                </div>
+                <h3>Developer</h3>
+                <p>Frontend Specialist</p>
+              </div>
+              <div className='team-member'>
+                <div className='member-avatar'>
+                  <i className='fas fa-user'></i>
+                </div>
+                <h3>Developer</h3>
+                <p>Frontend Specialist</p>
+              </div>
+              <div className='team-member'>
+                <div className='member-avatar'>
+                  <i className='fas fa-user'></i>
+                </div>
+                <h3>Developer</h3>
+                <p>Frontend Specialist</p>
+              </div>
+              <div className='team-member'>
+                <div className='member-avatar'>
+                  <i className='fas fa-user'></i>
+                </div>
+                <h3>Developer</h3>
+                <p>Frontend Specialist</p>
+              </div>
               <div className='team-member'>
                 <div className='member-avatar'>
                   <i className='fas fa-user'></i>

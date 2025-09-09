@@ -15,6 +15,12 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+
+          <li className='navbar-item'>
+            <Link to='/about' className='navbar-link'>
+              About
+            </Link>
+          </li>
           <li className='navbar-item'>
             <Link to='/signin' className='navbar-link'>
               Admin Sign In

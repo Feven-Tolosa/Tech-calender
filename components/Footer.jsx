@@ -19,14 +19,14 @@ const Footer = () => {
                 <a href='/'>Home</a>
               </li>
               <li>
-                <a href='/admin'>Admin Panel</a>
+                <a href='/signin'>Admin Panel</a>
               </li>
             </ul>
           </div>
           <div className='footer-section'>
             <h4>Contact Us</h4>
             <p>info@techevents.com</p>
-            <p>+1 (555) 123-4567</p>
+            <p>+251 123-456-789</p>
           </div>
         </div>
         <div className='footer-bottom'>
