@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const EventCard = ({ event }) => {
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -13,7 +15,9 @@ const EventCard = ({ event }) => {
         <h3>{event.title}</h3>
         <p className='event-date'>{formatDate(event.date)}</p>
         <p className='event-description'>{event.description}</p>
-        <button className='event-button'>Learn More</button>
+        <Link to={`/events/${event.id}`} className='event-button'>
+          Learn More
+        </Link>
       </div>
     </div>
   )

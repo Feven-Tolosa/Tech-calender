@@ -1117,3 +1117,270 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* EventSingle.css */
+.event-single-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-spinner,
+.event-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.event-not-found h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.event-hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.back-button {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.back-button:hover {
+  opacity: 1;
+}
+
+.back-button i {
+  margin-right: 0.5rem;
+}
+
+.event-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.event-date-large {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.event-details {
+  padding: 4rem 0;
+}
+
+.event-details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.event-info h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.event-full-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #34495e;
+  margin-bottom: 2.5rem;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.meta-item i {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-top: 0.3rem;
+}
+
+.meta-item h4 {
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+}
+
+.meta-item p {
+  color: #7f8c8d;
+}
+
+.event-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.register-box,
+.share-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.register-box h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.register-box p {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.register-note {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.share-box h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.share-button:hover {
+  transform: translateY(-3px);
+}
+
+.share-button.facebook {
+  background: #3b5998;
+}
+
+.share-button.twitter {
+  background: #1da1f2;
+}
+
+.share-button.linkedin {
+  background: #0077b5;
+}
+
+.share-button.link {
+  background: #7f8c8d;
+}
+
+.related-events {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.related-events h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .event-details-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .event-sidebar {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .event-sidebar {
+    flex-direction: column;
+  }
+
+  .event-meta {
+    gap: 1rem;
+  }
+
+  .meta-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .related-events .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .event-hero {
+    padding: 3rem 0;
+  }
+
+  .event-hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .event-date-large {
+    font-size: 1.2rem;
+  }
+}

@@ -7,6 +7,7 @@ import AdminPage from '../components/AdminPage'
 import HomePage from '../components/HomePage'
 import SignIn from '../components/SignIn'
 import About from '../components/About'
+import EventSingle from '../components/EventSingle' // Add to your Routes
 
 function App() {
   const [events, setEvents] = useState([])
@@ -104,6 +105,8 @@ function App() {
           <Route path='/' element={<HomePage events={events} />} />
           <Route path='/signin' element={<SignIn />} />
           <Route path='/about' element={<About />} />
+
+          <Route path='/events/:id' element={<EventSingle events={events} />} />
           <Route
             path='/admin'
             element={
