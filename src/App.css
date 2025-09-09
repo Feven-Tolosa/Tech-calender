@@ -575,6 +575,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
@@ -594,8 +595,8 @@ body {
 }
 
 .signin-icon {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
   border-radius: 50%;
   display: flex;
@@ -935,6 +936,160 @@ body {
   color: #7f8c8d;
 }
 
+.team-section {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.team-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.team-description {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.7;
+}
+
+/* First row with 4 members */
+.team-grid.first-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Second row with 3 members */
+.team-grid.second-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.team-member {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.member-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border: 4px solid #f5f7fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.team-member p {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #f5f7fa;
+  color: #3498db;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .team-grid.first-row {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+
+  .team-grid.second-row {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+
+  /* Center the last member in second row */
+  .team-grid.second-row .team-member:last-child {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid.first-row,
+  .team-grid.second-row {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  /* Reset the centered member on mobile */
+  .team-grid.second-row .team-member:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .team-member {
+    padding: 1.5rem;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-grid.first-row,
+  .team-grid.second-row {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+  }
+}
 /* Responsive Design */
 @media (max-width: 900px) {
   .about-section,

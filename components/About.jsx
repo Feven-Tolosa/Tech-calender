@@ -112,61 +112,169 @@ const About = () => {
           </section>
 
           <section className='team-section'>
-            <h2>Behind the Project</h2>
+            <h2>Behind the Project - Our Team</h2>
             <p className='team-description'>
-              Tech Events Calendar was created by a team of developers
-              passionate about technology and community building. We're
-              constantly working to improve the platform and add new features.
+              We're a diverse team of passionate individuals dedicated to
+              creating the best tech event platform for our community.
             </p>
-            <div className='team-grid'>
+
+            {/* First Row - 4 Members */}
+            <div className='team-grid first-row'>
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80'
+                    alt='Alex Johnson'
+                  />
                 </div>
-                <h3>Developer</h3>
-                <p>Frontend Specialist</p>
+                <h3>Yonatan </h3>
+                <p>Project Lead</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-github'></i>
+                  </a>
+                </div>
               </div>
+
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80'
+                    alt='Sarah Williams'
+                  />
                 </div>
-                <h3>Developer</h3>
-                <p>Frontend Specialist</p>
+                <h3>Iman</h3>
+                <p>Frontend Developer</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-github'></i>
+                  </a>
+                </div>
               </div>
+
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'
+                    alt='Michael Chen'
+                  />
                 </div>
-                <h3>Developer</h3>
-                <p>Frontend Specialist</p>
+                <h3>Rukia</h3>
+                <p>Backend Developer</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-github'></i>
+                  </a>
+                </div>
               </div>
+
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80'
+                    alt='Emily Rodriguez'
+                  />
                 </div>
-                <h3>Developer</h3>
-                <p>Frontend Specialist</p>
+                <h3>Nesria</h3>
+                <p>UI/UX Designer</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-dribbble'></i>
+                  </a>
+                </div>
               </div>
+            </div>
+
+            {/* Second Row - 3 Members */}
+            <div className='team-grid second-row'>
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1299&q=80'
+                    alt='David Kim'
+                  />
                 </div>
-                <h3>Developer</h3>
-                <p>Frontend Specialist</p>
+                <h3>Ahlam</h3>
+                <p>DevOps Engineer</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-github'></i>
+                  </a>
+                </div>
               </div>
+
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80'
+                    alt='Priya Patel'
+                  />
                 </div>
-                <h3>Developer</h3>
-                <p>Frontend Specialist</p>
+                <h3>Abdulmejid</h3>
+                <p>Data Analyst</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-medium'></i>
+                  </a>
+                </div>
               </div>
+
               <div className='team-member'>
-                <div className='member-avatar'>
-                  <i className='fas fa-user'></i>
+                <div className='member-image'>
+                  <img
+                    src='https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80'
+                    alt='Marcus Brown'
+                  />
                 </div>
-                <h3>Designer</h3>
-                <p>UI/UX Expert</p>
+                <h3>Ibtisam</h3>
+                <p>React Developer</p>
+                <div className='social-links'>
+                  <a href='#'>
+                    <i className='fab fa-linkedin'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-twitter'></i>
+                  </a>
+                  <a href='#'>
+                    <i className='fab fa-instagram'></i>
+                  </a>
+                </div>
               </div>
             </div>
           </section>
