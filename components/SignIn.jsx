@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import './SignIn.css'
 
 const SignIn = () => {
   const [credentials, setCredentials] = useState({
@@ -13,7 +12,7 @@ const SignIn = () => {
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
-  // Simple admin credentials (in a real app, this would be handled by a backend)
+  // Simple admin credentials (for demo purposes)
   const adminCredentials = {
     username: 'admin',
     password: 'admin123',

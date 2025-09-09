@@ -1,9 +1,17 @@
 // components/AdminPage.js
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 const AdminPage = ({ events, addEvent, deleteEvent, updateEvent }) => {
+  const navigate = useNavigate()
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem('isAdminAuthenticated')
+    if (!isAuthenticated) {
+      navigate('/signin')
+    }
+  }, [navigate])
   const [isEditing, setIsEditing] = useState(false)
   const [currentEvent, setCurrentEvent] = useState({
     id: '',
