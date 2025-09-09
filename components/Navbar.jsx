@@ -21,9 +21,10 @@ const Navbar = () => {
               About
             </Link>
           </li>
+
           <li className='navbar-item'>
             <Link to='/signin' className='navbar-link'>
-              Admin Sign In
+              Sign In
             </Link>
           </li>
         </ul>

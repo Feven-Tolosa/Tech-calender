@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -179,7 +180,7 @@ const EventSingle = ({ events }) => {
                     onClick={() => handleShare('twitter')}
                     aria-label='Share on Twitter'
                   >
-                    <i className='fab fa-twitter'></i>
+                    <FontAwesomeIcon icon='faTwitter' />
                   </button>
                   <button
                     className='share-button linkedin'

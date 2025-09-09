@@ -7,8 +7,12 @@ import AdminPage from '../components/AdminPage'
 import HomePage from '../components/HomePage'
 import SignIn from '../components/SignIn'
 import About from '../components/About'
-import EventSingle from '../components/EventSingle' // Add to your Routes
+import EventSingle from '../components/EventSingle'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faCoffee, faHome } from '@fortawesome/free-solid-svg-icons'
 
+library.add(faTwitter, faFacebook, faCoffee, faHome)
 function App() {
   const [events, setEvents] = useState([])
 
