@@ -19,7 +19,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  background: linear-gradient(135deg, #5d87a4 0%, #2c3e50 100%);
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -103,7 +103,7 @@ body {
 }
 
 .cta-button {
-  background-color: #2c3e50;
+  background: linear-gradient(135deg, #5d87a4 0%, #2c3e50 100%);
   color: white;
   border: none;
   padding: 15px 40px;
@@ -248,7 +248,7 @@ body {
 }
 
 .event-button {
-  background-color: #3498db;
+  background: linear-gradient(135deg, #5d87a4 0%, #2c3e50 100%);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -310,7 +310,7 @@ body {
 
 /* Footer Styles */
 .footer {
-  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  background: linear-gradient(135deg, #5d87a4 0%, #2c3e50 100%);
   color: white;
   padding: 2rem 0 0;
 }
@@ -746,7 +746,7 @@ body {
 }
 
 .about-hero {
-  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
   color: white;
   text-align: center;
   padding: 6rem 1rem;
@@ -1117,6 +1117,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 /* EventSingle.css */
 .event-single-page {
   min-height: 100vh;
@@ -1133,6 +1134,18 @@ body {
   flex: 1;
   padding: 2rem;
   text-align: center;
+}
+
+.loading-spinner i {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.event-not-found i {
+  font-size: 4rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
 }
 
 .event-not-found h2 {
@@ -1156,10 +1169,14 @@ body {
   margin-bottom: 2rem;
   opacity: 0.9;
   transition: opacity 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .back-button:hover {
   opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .back-button i {
@@ -1221,6 +1238,7 @@ body {
   font-size: 1.5rem;
   color: #3498db;
   margin-top: 0.3rem;
+  min-width: 24px;
 }
 
 .meta-item h4 {
@@ -1267,6 +1285,10 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .register-button:hover {
@@ -1301,6 +1323,8 @@ body {
   color: white;
   font-size: 1.1rem;
   transition: transform 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .share-button:hover {

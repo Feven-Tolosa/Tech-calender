@@ -28,11 +28,53 @@ const EventSingle = ({ events }) => {
     return new Date(dateString).toLocaleDateString(undefined, options)
   }
 
+  // Function to handle social sharing
+  const handleShare = (platform) => {
+    const eventUrl = window.location.href
+    const text = `Check out this tech event: ${event.title}`
+
+    let shareUrl = ''
+
+    switch (platform) {
+      case 'facebook':
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+          eventUrl
+        )}`
+        break
+      case 'twitter':
+        shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+          text
+        )}&url=${encodeURIComponent(eventUrl)}`
+        break
+      case 'linkedin':
+        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+          eventUrl
+        )}`
+        break
+      case 'link':
+        navigator.clipboard.writeText(eventUrl)
+        alert('Event link copied to clipboard!')
+        return
+      default:
+        return
+    }
+
+    window.open(shareUrl, '_blank')
+  }
+
+  // Function to handle registration
+  const handleRegister = () => {
+    alert(`Registration for "${event.title}" has been confirmed!`)
+  }
+
   if (loading) {
     return (
       <div className='event-single-page'>
         <Navbar />
-        <div className='loading-spinner'>Loading event details...</div>
+        <div className='loading-spinner'>
+          <i className='fas fa-spinner fa-spin'></i>
+          <p>Loading event details...</p>
+        </div>
         <Footer />
       </div>
     )
@@ -43,6 +85,7 @@ const EventSingle = ({ events }) => {
       <div className='event-single-page'>
         <Navbar />
         <div className='event-not-found'>
+          <i className='fas fa-calendar-times'></i>
           <h2>Event Not Found</h2>
           <p>The event you're looking for doesn't exist.</p>
           <Link to='/' className='cta-button'>
@@ -113,7 +156,9 @@ const EventSingle = ({ events }) => {
               <div className='register-box'>
                 <h3>Register for this Event</h3>
                 <p>Secure your spot at this exciting tech event</p>
-                <button className='register-button'>Register Now</button>
+                <button className='register-button' onClick={handleRegister}>
+                  <i className='fas fa-ticket-alt'></i> Register Now
+                </button>
                 <p className='register-note'>
                   Free registration • Limited seats available
                 </p>
@@ -122,18 +167,34 @@ const EventSingle = ({ events }) => {
               <div className='share-box'>
                 <h4>Share this event</h4>
                 <div className='share-buttons'>
-                  <a href='#' className='share-button facebook'>
+                  <button
+                    className='share-button facebook'
+                    onClick={() => handleShare('facebook')}
+                    aria-label='Share on Facebook'
+                  >
                     <i className='fab fa-facebook-f'></i>
-                  </a>
-                  <a href='#' className='share-button twitter'>
+                  </button>
+                  <button
+                    className='share-button twitter'
+                    onClick={() => handleShare('twitter')}
+                    aria-label='Share on Twitter'
+                  >
                     <i className='fab fa-twitter'></i>
-                  </a>
-                  <a href='#' className='share-button linkedin'>
+                  </button>
+                  <button
+                    className='share-button linkedin'
+                    onClick={() => handleShare('linkedin')}
+                    aria-label='Share on LinkedIn'
+                  >
                     <i className='fab fa-linkedin-in'></i>
-                  </a>
-                  <a href='#' className='share-button link'>
+                  </button>
+                  <button
+                    className='share-button link'
+                    onClick={() => handleShare('link')}
+                    aria-label='Copy event link'
+                  >
                     <i className='fas fa-link'></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
